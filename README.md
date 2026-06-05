@@ -129,15 +129,15 @@ in your browser.
 
 ### Main Menu
 
-![Main Menu](screenshots/Screenshot 2026-06-05 191050.png)
+![Main Menu](screenshots/Screenshot%202026-06-05%20191050.png)
 
 ### Gameplay
 
-![Gameplay](screenshots/Screenshot 2026-06-05 191124.png)
+![Gameplay](screenshots/Screenshot%202026-06-05%20191124.png)
 
 ### Winner Screen
 
-![Winner Screen](screenshots/Screenshot 2026-06-05 191131.png)
+![Winner Screen](screenshots/Screenshot%202026-06-05%20191131.png)
 
 ## Learning Outcomes
 
