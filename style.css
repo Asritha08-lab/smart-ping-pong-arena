@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,
+    #10224a,
+    #050b18);
+
+    color:white;
+
+    font-family:'Segoe UI',sans-serif;
+
+    overflow:hidden;
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:20px;
+}
+
+/* HEADER */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.header h1{
+
+    font-size:3rem;
+
+    color:cyan;
+
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan;
+}
+
+.header p{
+
+    color:#ccc;
+
+    margin-top:8px;
+}
+
+/* GLASS MENU */
+
+.glass-card{
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:
+    blur(10px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    width:420px;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.3);
+}
+
+.glass-card h2,
+.glass-card h3{
+
+    margin-bottom:10px;
+}
+
+.instructions{
+
+    margin-top:20px;
+}
+
+.instructions p{
+
+    margin:5px 0;
+}
+
+/* BUTTONS */
+
+button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin:5px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 15px cyan;
+}
+
+#singlePlayer{
+
+    background:#00bcd4;
+    color:white;
+}
+
+#twoPlayer{
+
+    background:#3f51b5;
+    color:white;
+}
+
+.start-btn{
+
+    background:#00c853;
+    color:white;
+}
+
+#restartBtn{
+
+    background:#ff9800;
+    color:white;
+}
+
+#fullscreenBtn{
+
+    background:#9c27b0;
+    color:white;
+}
+
+#mainMenuBtn,
+#winnerMenuBtn{
+
+    background:#e53935;
+    color:white;
+}
+
+#playAgainBtn{
+
+    background:#00c853;
+    color:white;
+}
+
+/* SELECT */
+
+select{
+
+    padding:10px;
+
+    border-radius:8px;
+
+    border:none;
+
+    font-size:16px;
+}
+
+/* GAME CONTROLS */
+
+#gameControls{
+
+    display:none;
+
+    margin-bottom:15px;
+}
+
+/* SCOREBOARD */
+
+#scoreBoard{
+
+    display:none;
+
+    width:1200px;
+
+    max-width:95vw;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    font-size:2rem;
+
+    font-weight:bold;
+}
+
+#player1Score,
+#player2Score{
+
+    color:cyan;
+
+    text-shadow:
+    0 0 10px cyan;
+}
+
+#gameTitle{
+
+    color:white;
+}
+
+/* CANVAS */
+
+.canvas-container{
+
+    position:relative;
+}
+
+canvas{
+
+    display:none;
+
+    background:black;
+
+    border:4px solid cyan;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan;
+
+    width:95vw;
+
+    max-width:1200px;
+
+    height:auto;
+}
+
+/* COUNTDOWN */
+
+#countdownOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:120px;
+
+    font-weight:bold;
+
+    color:white;
+
+    text-shadow:
+    0 0 20px cyan;
+}
+
+/* PAUSE */
+
+#pauseOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    background:
+    rgba(0,0,0,.7);
+
+    text-align:center;
+}
+
+#pauseOverlay h1{
+
+    color:yellow;
+
+    font-size:4rem;
+}
+
+/* WINNER */
+
+#winnerOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    background:
+    rgba(0,0,0,.8);
+
+    text-align:center;
+}
+
+#winnerText{
+
+    font-size:4rem;
+
+    color:gold;
+
+    text-shadow:
+    0 0 20px gold;
+
+    margin-bottom:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .header h1{
+
+        font-size:2rem;
+    }
+
+    .glass-card{
+
+        width:90%;
+    }
+
+    button{
+
+        width:90%;
+    }
+
+    #scoreBoard{
+
+        font-size:1.3rem;
+    }
+}

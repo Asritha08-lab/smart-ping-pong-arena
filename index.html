@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ping Pong Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+
+            <h1>SMART PING PONG ARENA</h1>
+
+            <p>
+                HTML5 Canvas | JavaScript | CSS3
+            </p>
+
+        </div>
+
+        <!-- Main Menu -->
+        <div id="menu" class="glass-card">
+
+            <h2>Game Mode</h2>
+
+            <button id="singlePlayer">
+                Single Player
+            </button>
+
+            <button id="twoPlayer">
+                Two Players
+            </button>
+
+            <br><br>
+
+            <h3>Difficulty</h3>
+
+            <select id="difficulty">
+
+                <option value="3">
+                    Easy
+                </option>
+
+                <option value="5" selected>
+                    Medium
+                </option>
+
+                <option value="8">
+                    Hard
+                </option>
+
+            </select>
+
+            <br><br>
+
+            <button id="startGame" class="start-btn">
+                Start Game
+            </button>
+
+            <div class="instructions">
+
+                <h3>Controls</h3>
+
+                <p>
+                    W → Up
+                </p>
+
+                <p>
+                    S → Down
+                </p>
+
+                <p>
+                    ↑ → Up
+                </p>
+
+                <p>
+                    ↓ → Down
+                </p>
+
+                <p>
+                    P → Pause
+                </p>
+
+                <p>
+                    R → Restart
+                </p>
+
+                <p>
+                    ESC → Main Menu
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Top Control Buttons -->
+
+        <div id="gameControls">
+
+            <button id="mainMenuBtn">
+                Main Menu
+            </button>
+
+            <button id="restartBtn">
+                Restart
+            </button>
+
+            <button id="fullscreenBtn">
+                Full Screen
+            </button>
+
+        </div>
+
+        <!-- Scoreboard -->
+
+        <div id="scoreBoard">
+
+            <div id="player1Score">
+                0
+            </div>
+
+            <div id="gameTitle">
+                SMART PONG
+            </div>
+
+            <div id="player2Score">
+                0
+            </div>
+
+        </div>
+
+        <!-- Canvas -->
+
+        <div class="canvas-container">
+
+            <canvas
+                id="gameCanvas"
+                width="1200"
+                height="650">
+            </canvas>
+
+            <!-- Countdown -->
+
+            <div id="countdownOverlay">
+                3
+            </div>
+
+            <!-- Pause Overlay -->
+
+            <div id="pauseOverlay">
+
+                <h1>GAME PAUSED</h1>
+
+                <p>
+                    Press R to Continue
+                </p>
+
+            </div>
+
+            <!-- Winner Overlay -->
+
+            <div id="winnerOverlay">
+
+                <h1 id="winnerText">
+                    PLAYER 1 WINS
+                </h1>
+
+                <button id="playAgainBtn">
+                    Play Again
+                </button>
+
+                <button id="winnerMenuBtn">
+                    Main Menu
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
